@@ -1,0 +1,60 @@
+// ==================
+// Button Mixin
+// ==================
+
+@mixin button($color) {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-radius: 7px;
+	border: none;
+	padding: 0.85rem 0;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	background: $color;
+	&:hover{
+		opacity: .7;
+	}
+	@media (min-width: $screen-sm){
+		margin-bottom: 0;
+	}
+}
+
+// ==================
+// Grid Mixin
+// ==================
+
+@mixin grid--theme__colors($color) {
+	margin-bottom: 1rem;
+	border-radius: 7px;
+	border: solid 1px;
+	padding: 0.85rem;
+	color: #808080;
+	border: none;
+	font-weight: bold;
+	background: $color;
+	@media (min-width: $screen-sm){
+		text-align: center;
+	}
+}
+
+// ==================
+// Flexbox Mixin
+// ==================
+
+@mixin flex-row($wrap) {
+	display: flex;
+	flex-wrap: $wrap;
+	justify-content: space-around;
+}
+
+// ==================
+// MediaQuerie Mixin
+// ==================
+
+@mixin desktop_view {
+  @media (min-width:$screen-sm){
+    @content;
+  }
+}

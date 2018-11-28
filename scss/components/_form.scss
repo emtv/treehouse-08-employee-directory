@@ -1,0 +1,13 @@
+.group-form {
+	input[type="text"]{
+		display: block;
+		margin: 0 auto;
+		border-radius: 10px;
+		border: solid 1px #e1e1e1;
+		padding: 0.5rem 2rem;
+		&:focus {
+			outline: none;
+			box-shadow: 1px 1px 11px -1px #979d9c;
+		}
+	}
+}

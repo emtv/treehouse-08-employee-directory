@@ -1,0 +1,21 @@
+* {
+	font-family: $font-nunito;
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section {
+	margin-bottom: 2rem;
+}
+
+.section-row {
+	padding: 0 1.5rem;
+}
